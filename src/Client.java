@@ -1,4 +1,4 @@
-public class Client extends Queue{
+public class Client extends Example {
     private final String num;
     public Client(String num) {
         this.num = num;
@@ -6,6 +6,6 @@ public class Client extends Queue{
 
     @Override
     public String toString() {
-        return " client " + num + " get cass number " + getCassNum();
+        return " client " + num + " get cass number " + Queue.getCassNum();
     }
 }

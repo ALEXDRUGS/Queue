@@ -2,11 +2,11 @@ import java.util.LinkedList;
 import java.util.Random;
 
 public class Queue {
-    public static LinkedList<Client> clientQueue1 = new LinkedList<>();
-    public static LinkedList<Client> clientQueue2 = new LinkedList<>();
-    public static LinkedList<Client> clientQueue3 = new LinkedList<>();
-    public static Random random = new Random();
-    public static Integer cassNum;
+    private static final LinkedList<Client> clientQueue1 = new LinkedList<>();
+    private static final LinkedList<Client> clientQueue2 = new LinkedList<>();
+    private static final LinkedList<Client> clientQueue3 = new LinkedList<>();
+    private static final Random random = new Random();
+    private static Integer cassNum;
 
     public static Integer getCassNum() {
         return cassNum;
@@ -18,7 +18,9 @@ public class Queue {
             cassNum = randomCass;
             switch (randomCass) {
                 case 0:
-                    if (clientQueue1.size() < 5) {
+                    if (clientQueue1.size() < 5
+                            && clientQueue1.size() <= clientQueue2.size()
+                            && clientQueue1.size() <= clientQueue3.size()) {
                         clientQueue1.add(new Client(Integer.toString(i)));
                         System.out.println(clientQueue1);
                         if (clientQueue1.size() == 5) {
@@ -27,7 +29,9 @@ public class Queue {
                     }
                     break;
                 case 1:
-                    if (clientQueue2.size() < 5) {
+                    if (clientQueue2.size() < 5
+                            && clientQueue2.size() <= clientQueue1.size()
+                            && clientQueue2.size() <= clientQueue3.size()) {
                         clientQueue2.add(new Client(Integer.toString(i)));
                         System.out.println(clientQueue2);
                         if (clientQueue2.size() == 5) {
@@ -36,7 +40,9 @@ public class Queue {
                     }
                     break;
                 case 2:
-                    if (clientQueue3.size() < 5) {
+                    if (clientQueue3.size() < 5
+                            && clientQueue3.size() <= clientQueue1.size()
+                            && clientQueue3.size() <= clientQueue2.size()) {
                         clientQueue3.add(new Client(Integer.toString(i)));
                         System.out.println(clientQueue3);
                         if (clientQueue3.size() == 5) {
@@ -52,5 +58,7 @@ public class Queue {
 
     public static void main(String[] args) {
         numCass();
+        Example example = new Example();
+        example.example();
     }
 }
