@@ -1,4 +1,6 @@
-public class Client extends Example {
+package queue;
+
+public class Client {
     private final String num;
     public Client(String num) {
         this.num = num;

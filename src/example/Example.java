@@ -1,8 +1,10 @@
+package example;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Example {
-    void example() {
+    public void example() {
         List<List<String>> biDemArrList = new ArrayList<>();
         for (int i = 0; i < 8; i++) {
             biDemArrList.add(i, new ArrayList<>());
