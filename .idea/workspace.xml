@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b595905-ebac-413e-a87d-78caecef528b" name="Changes" comment="Product">
-      <change afterPath="$PROJECT_DIR$/src/example/ArrayIntegerRandom.java" afterDir="false" />
+    <list default="true" id="0b595905-ebac-413e-a87d-78caecef528b" name="Changes" comment="Odd">
+      <change afterPath="$PROJECT_DIR$/src/TaskList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669309321838</updated>
       <workItem from="1669309326448" duration="67369000" />
-      <workItem from="1669725372790" duration="47105000" />
+      <workItem from="1669725372790" duration="56489000" />
     </task>
     <task id="LOCAL-00001" summary="Queue master">
       <created>1669400837470</created>
@@ -92,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669795947309</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Odd">
+      <created>1669808867127</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669808867127</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +121,7 @@
     <MESSAGE value="Queue queue" />
     <MESSAGE value="Queue queue + Example" />
     <MESSAGE value="Product" />
-    <option name="LAST_COMMIT_MESSAGE" value="Product" />
+    <MESSAGE value="Odd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Odd" />
   </component>
 </project>
