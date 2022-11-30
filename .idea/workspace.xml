@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b595905-ebac-413e-a87d-78caecef528b" name="Changes" comment="Queue queue + Example">
-      <change afterPath="$PROJECT_DIR$/src/product/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/product/SetProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/product/Recipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/product/SetRecipe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/queue/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/example/Example.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/queue/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product/SetProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/product/SetProduct.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +29,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/corretto-11.0.17/lib/src.zip!/java.base/java/util/Iterator.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -45,7 +47,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Alex/IdeaProjects/Data/src/data"
+    "last_opened_file_path": "C:/Users/Alex/IdeaProjects/Data/src/data",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -62,6 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669309321838</updated>
       <workItem from="1669309326448" duration="67369000" />
+      <workItem from="1669725372790" duration="36254000" />
     </task>
     <task id="LOCAL-00001" summary="Queue master">
       <created>1669400837470</created>

@@ -25,6 +25,7 @@ public class Product {
         return weight;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -46,20 +47,33 @@ public class Product {
     public static void main(String[] args) {
 
         Product banana = new Product("Банан", 100.0, 1.5);
-        Product egg = new Product("Яйцо", 120.0, 1.5);
-        Product apple = new Product("Яблоко", 120.0, 1.5);
-        Product butter = new Product("Масло", 120.0, 1.5);
-        Product meat = new Product("Мясо", 120.0, 1.5);
+        Product egg = new Product("Яйцо", 12.0, 1.5);
+        Product apple = new Product("Яблоко", 10.0, 1.5);
+        Product butter = new Product("Масло", 2.0, 1.5);
+        Product meat = new Product("Мясо", 40.0, 1.5);
 
-        SetProduct setProduct = new SetProduct();
+        SetProduct<Product> setProduct = new SetProduct<>();
 
-        setProduct.addProduct(banana);
         setProduct.addProduct(egg);
+        setProduct.addProduct(banana);
         setProduct.addProduct(apple);
         setProduct.addProduct(butter);
         setProduct.addProduct(meat);
 
-        System.out.println(setProduct);
+        SetRecipe<Recipe> setRecipe = new SetRecipe<>();
+
+        Recipe recipe = new Recipe(" Торт ", setProduct, setProduct.getSum());
+        Recipe plov = new Recipe(" Плов ", setProduct, setProduct.getSum());
+        Recipe borsh = new Recipe(" Борщ ", setProduct, setProduct.getSum());
+        Recipe salat = new Recipe(" Салат ", setProduct, setProduct.getSum());
+
+        setRecipe.addRecipe(recipe);
+        setRecipe.addRecipe(plov);
+        setRecipe.addRecipe(borsh);
+        setRecipe.addRecipe(salat);
+        setRecipe.addRecipe(salat);
+
+        System.out.println(setRecipe);
 
     }
 }
