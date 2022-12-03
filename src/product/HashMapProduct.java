@@ -2,13 +2,13 @@ package product;
 
 import java.util.*;
 
-public class SetProduct<P> {
-    private final Set<Product> products = new HashSet<>();
+public class HashMapProduct<P, I extends Number> {
+    private final HashMap<Product, Integer> products = new HashMap<>();
 
     public void addProduct(Product product) {
         boolean test = product.getName().isBlank() || product.getCost() < 0 || product.getWeight() < 0;
-        if (!products.contains(product)) {
-            products.add(product);
+        if (!products.containsKey(product)) {
+            products.put(product, product.getAmount());
         } else throw new RuntimeException("Продукт уже был куплен");
         if (test) {
             throw new RuntimeException("Заполните карточку товара полностью");
@@ -16,18 +16,21 @@ public class SetProduct<P> {
     }
 
     public double getSum() {
-        double sum = 0;
-        for (Product product : products) {
-            sum += product.getCost();
+        int amount;
+        double sumCost = 0;
+        for (Map.Entry<Product, Integer> productIntegerEntry : products.entrySet()) {
+            sumCost = productIntegerEntry.getKey().getCost();
+            amount = products.keySet().iterator().next().getAmount();
+            sumCost = sumCost * amount * products.keySet().size();
         }
-        return sum;
+        return sumCost;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        SetProduct<?> that = (SetProduct<?>) o;
+        HashMapProduct<?, ?> that = (HashMapProduct<?, ?>) o;
         return products.equals(that.products);
     }
 
