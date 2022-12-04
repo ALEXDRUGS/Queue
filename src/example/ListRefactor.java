@@ -6,10 +6,11 @@ public class ListRefactor {
     public static Map<String, List<Integer>> stringListHashMap = new HashMap<>();
 
     public List<Integer> add() {
-        List<Integer> integerList = new ArrayList<>(3);
-        for (int i = 0; i < 3; i++) {
+        List<Integer> integerList = new ArrayList<>(10);
+        for (int i = 0; i < 10; i++) {
             Random random = new Random();
             integerList.add(i, random.nextInt(1000));
+            System.out.println(integerList);
         }
         return integerList;
     }
